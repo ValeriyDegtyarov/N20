@@ -1,0 +1,117 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    z-index: 1;
+
+    
+
+    
+    font-size: var(--fs-btn);
+    line-height: var(--lh-btn);
+    font-weight: 500;
+    padding: 1.176em 2.117em;
+    border: 1px solid var(--white);
+    
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.15);
+
+    background-color: transparent;
+
+    transition: color 0.4s ease;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+
+        background: linear-gradient(to bottom right, #F7EA76 0%, #D1AF4D 100%);
+
+        opacity: 0;
+
+        transition: opacity 0.4s ease;
+    }
+
+    &:hover::before{
+        opacity: 1;
+        
+    }
+
+
+     &:hover{
+        color: var(--gray);
+    }
+}
+
+
+.btn--header {
+    border: 2px solid var(--dy);
+    color: var(--dy);
+      
+}
+
+
+.btn--hero{
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+.faq-btn-one{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--dy);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    margin-top: 3.5rem;
+
+    img{
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+}
+
+.faq-button {
+    display: block;
+    align-self: center;   
+    width: 4.8rem;
+    height: auto;
+    background-color: var(--dy);
+    padding: 0.9rem 1.6rem;
+    margin-top: auto;
+
+    img{
+        display: block;
+        width: 3.2rem;   
+    }
+}
+
+
+.btn--member {
+    display: inline-flex;
+    width: 38rem;
+    color: var(--white);
+    
+}
+
+
+
+@media (max-width: 768px) {
+        .button {
+            font-size: 11px;
+        }
+}
+
+
+@media (max-width: 375px) {
+    .button {
+        font-size: 8px;
+    }
+
+}

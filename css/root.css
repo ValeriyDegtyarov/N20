@@ -1,0 +1,52 @@
+:root {
+    --dy: #D9B346;
+    --wy: #DABE57;
+
+    --black: #0C0C0C;
+    --gray: #181818;
+
+    --white-one: #F8F8F8;
+    --white: #FFFFFF;
+
+    --white-card: #ebebeb;
+
+
+    --fs-h1: 8rem;
+    --lh-h1: 8.8rem;
+
+    --fs-h2: 5.2rem;
+    --lh-h2: 6.2rem;
+
+    --fs-h3: 3.6rem;
+    --lh-h3: 6.2rem;
+
+    --fs-ab: 8rem;
+    --lh-ab: 9rem;
+    
+    --fs-card-h: 2rem;
+    --lh-card-h: 2.5rem;
+
+    --fs-tm:3rem;
+    --lh-tm:4.5rem;
+
+    --fs-tm-p:1.5rem;
+    --lh-tm-p:3rem;
+
+    --fs-card-p: 1.5rem;
+    --lh-card-p: 2.5rem;
+
+
+    --fs-sub: 2rem;
+    --lh-sub: 3rem;
+
+    --fs-nav:1.6rem;
+    --lh-nav:2.4rem;
+
+    --fs-btn: 1.7rem;
+    --lh-btn: 2.5rem;
+
+    --ls: 0.2px;
+    --ls-tm: 0.3px;
+    --ls-card: 0.35px;
+
+}

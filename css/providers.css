@@ -1,0 +1,133 @@
+.providers {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.providers-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.providers-vector {
+    position: absolute;
+    top: -100px;
+    left: 100px;
+    width: 2400px;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.providers-header{
+
+}
+
+.providers-header-title {
+    font-size: var(--fs-h2);
+    line-height: var(--lh-h2);
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: var(--ls);
+    margin-bottom: 1rem;
+}
+
+.providers-header-subtitle {
+    font-size: var(--fs-sub);
+    line-height: var(--lh-sub);
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-one);
+
+    margin-bottom: 6rem;
+
+    span{
+        color: var(--dy);
+    }
+}
+
+.providers-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+
+@media (max-width: 765px){
+    .providers{
+        padding: 4rem 2rem;
+    } 
+
+    .providers-vector {
+        left: 0;
+        width: 160rem;
+    }
+
+    .providers-back {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .providers-header-title {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .providers-header-subtitle{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .providers-logos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .providers-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .providers {
+        padding: 3rem 1.5rem;
+    }
+
+    .providers-header-title {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .providers-header-subtitle{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .providers-logos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.6rem;
+    }
+}
+
+
+
+
+

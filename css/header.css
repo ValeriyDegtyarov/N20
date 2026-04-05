@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.3rem 3.9rem;
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;    
+    position: relative;
+}
+
+.header-icon{
+    display: block;
+    width: 9.2rem;
+    height: 6.2rem;
+}
+
+.nav {
+    display: flex;
+    gap: 3.1rem;
+}
+
+.nav-link{
+    font-size: var(--fs-btn);
+    line-height: var(--lh-btn);
+    font-weight: 500;
+    color: var(--white);
+
+    transition: color 0.4s linear;
+
+    &:hover{
+        color: var(--dy);
+    }
+}
+.burger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px){
+    .nav {
+        display: none;
+    }
+
+    .header-icon {
+        order: 2;
+        width: 5rem;
+        height: 3rem;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        order: -1;
+        cursor: pointer;
+    }
+
+    .burger span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: var(--white);
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        background-color: var(--gray);
+        padding: 2rem 3rem;
+        gap: 2rem;
+        z-index: 100;
+        min-width: 20rem;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .mobile-menu--open {
+        display: flex;
+    }
+
+    .burger--active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .burger--active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger--active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .mobile-menu-link {
+        font-size: 1.8rem;
+        color: var(--white);
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .header-icon {
+        display: none;
+    }
+}
+
